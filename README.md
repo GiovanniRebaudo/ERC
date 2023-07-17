@@ -22,7 +22,8 @@ The repository contains the following:
 1. `ERC_main.R` code to reproduce the main results in the article;
 2. `ERC_fcts.R` functions needed to run the main code;
 3. `ERC_cost.R` code to compute and plot the cost functions shown in the articles;
-4. `Data-and-Results` folder with data and results of the analyses.
+4. `ERC_extra.R` code to reproduce the results in the appendix;
+5. `Data-and-Results` folder with data and results of the analyses.
 
 #### Questions or bugs
 For bug reporting purposes, e-mail [Beatrice Franzolini](https://beatricefranzolini.github.io) (franzolini@pm.me).
