@@ -584,16 +584,6 @@ barplot(table_Binder_sim, xlab="clusters", ylab="frequency", col=viridis(4)[3],
         cex.lab = 2.5, cex.axis = 2.2)
 if(Save_Plot){invisible(dev.off())}
 
-# # Heatmap of the optimal Binder clustering (with package "salso")
-# # Compute the adjacency matrix associated with the Binder point estimate
-# Binder_opt_adj = psm(Binder_sim, nCores = 1)
-# # Figure 5 (b) of the manuscript
-# if(Save_Plot){CairoPNG(filename ='Image/binder_bern.png', 
-#                        width = 500, height = 500)}
-# heatmap.2(Binder_opt_adj,dendrogram='none', Rowv=TRUE, Colv=TRUE,
-#           trace='none',col=viridis(2)[2:1], key=FALSE)
-# if(Save_Plot){invisible(dev.off())}
-
 # Compute the optimal regularized (lambda=10) partition 
 # under Binder loss (default a=1) 
 # run_salso==T if you want to run salso otherwise load the results
@@ -613,15 +603,6 @@ barplot(table_Binder_sim_10, xlab="clusters", ylab="frequency",
         col=viridis(4)[3], main ="", family = "serif", font = 1, font.lab = 2,
         cex.lab = 2.5, cex.axis = 2.2)
 if(Save_Plot){invisible(dev.off())}
-# Heatmap of the optimal regularized Binder clustering (lambda=10)
-# Compute the adjacency matrix of the reg (lambda=10) Binder point estimate
-# Binder_opt_adj_10 = psm(Binder_sim_10, nCores = 1)
-# # Figure 5 (c) of the manuscript
-# if(Save_Plot){CairoPNG(filename ='Image/binder10_bern.png', 
-#                        width = 500, height = 500)}
-# heatmap.2(Binder_opt_adj_10,dendrogram='none', Rowv=TRUE, Colv=TRUE,
-#           trace='none',col=viridis(2)[2:1], key=FALSE)
-# if(Save_Plot){invisible(dev.off())}
 
 # Compute the optimal regularized (lambda=20) partition 
 # under Binder loss (default a=1) 
@@ -644,16 +625,6 @@ barplot(table_Binder_sim_20, xlab="clusters", ylab="frequency",
         col=viridis(4)[3], main ="", family = "serif", font = 1, font.lab = 2,
         cex.lab = 2.5, cex.axis = 2.2)
 if(Save_Plot){invisible(dev.off())}
-
-# Heatmap of the optimal regularized Binder clustering (lambda=20)
-# Compute the adjacency matrix of the reg (lambda=20) Binder point estimate
-# Binder_opt_adj_20 = psm(Binder_sim_20, nCores = 1)
-# # Figure 5 (d) of the manuscript
-# if(Save_Plot){CairoPNG(filename ='Image/binder20_bern.png', 
-#                        width = 500, height = 500)}
-# heatmap.2(Binder_opt_adj_20,dendrogram='none', Rowv=TRUE, Colv=TRUE,
-#           trace='none',col=viridis(2)[2:1], key=FALSE)
-# if(Save_Plot){invisible(dev.off())}
 
 Binder_bern_all        = cbind(Binder_sim, Binder_sim_10, Binder_sim_20)
 names(Binder_bern_all) = c("Binder_sim", "Binder_sim_10", "Binder_sim_20")
@@ -683,16 +654,6 @@ barplot(table_VI_sim, xlab="clusters", ylab="frequency", col=viridis(4)[3],
         cex.lab = 2.5, cex.axis = 2.2)
 if(Save_Plot){invisible(dev.off())}
 
-# Heatmap of the optimal Binder clustering (with package "salso")
-# Compute the adjacency matrix associated with the Binder point estimate
-# VI_opt_adj = psm(VI_sim, nCores = 1)
-# # Figure 5 (b) of the manuscript
-# if(Save_Plot){CairoPNG(filename ='Image/VI_bern.png', 
-#                        width = 500, height = 500)}
-# heatmap.2(VI_opt_adj,dendrogram='none', Rowv=TRUE, Colv=TRUE,
-#           trace='none',col=viridis(2)[2:1], key=FALSE)
-# if(Save_Plot){invisible(dev.off())}
-
 # Compute the optimal regularized (lambda=10) partition 
 # under Binder loss (default a=1) 
 # run_salso==T if you want to run salso otherwise load the results
@@ -712,15 +673,6 @@ barplot(table_VI_sim_10, xlab="clusters", ylab="frequency",
         col=viridis(4)[3], main ="", family = "serif", font = 1, font.lab = 2,
         cex.lab = 2.5, cex.axis = 2.2)
 if(Save_Plot){invisible(dev.off())}
-# Heatmap of the optimal regularized Binder clustering (lambda=10)
-# Compute the adjacency matrix of the reg (lambda=10) Binder point estimate
-# VI_opt_adj_10 = psm(VI_sim_10, nCores = 1)
-# # Figure 5 (c) of the manuscript
-# if(Save_Plot){CairoPNG(filename ='Image/binder10_bern_VI.png', 
-#                        width = 500, height = 500)}
-# heatmap.2(VI_opt_adj_10,dendrogram='none', Rowv=TRUE, Colv=TRUE,
-#           trace='none',col=viridis(2)[2:1], key=FALSE)
-# if(Save_Plot){invisible(dev.off())}
 
 # Compute the optimal regularized (lambda=20) partition 
 # under Binder loss (default a=1) 
@@ -742,16 +694,6 @@ barplot(table_VI_sim_20, xlab="clusters", ylab="frequency",
         col=viridis(4)[3], main ="", family = "serif", font = 1, font.lab = 2,
         cex.lab = 2.5, cex.axis = 2.2)
 if(Save_Plot){invisible(dev.off())}
-
-# Heatmap of the optimal regularized Binder clustering (lambda=20)
-# Compute the adjacency matrix of the reg (lambda=20) Binder point estimate
-# VI_opt_adj_20 = psm(VI_sim_20, nCores = 1)
-# # Figure 5 (d) of the manuscript
-# if(Save_Plot){CairoPNG(filename ='Image/binder20_bern_VI.png', 
-#                        width = 500, height = 500)}
-# heatmap.2(VI_opt_adj_20,dendrogram='none', Rowv=TRUE, Colv=TRUE,
-#           trace='none',col=viridis(2)[2:1], key=FALSE)
-# if(Save_Plot){invisible(dev.off())}
 
 VI_bern_all        = cbind( VI_sim, VI_sim_10, VI_sim_20)
 names(VI_bern_all) = c( "VI_sim", "VI_sim_10", "VI_sim_20")
