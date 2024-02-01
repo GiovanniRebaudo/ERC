@@ -29,7 +29,7 @@ The repository contains the following:
 For bug reporting purposes, e-mail [Beatrice Franzolini](https://beatricefranzolini.github.io) (franzolini@pm.me).
 
 #### Citation
-Please cite the following publication if you use this repository in your research: Franzolini, B. and Rebaudo, G. (2023). [Entropy regularization in probabilistic clustering](). *Statistical Methods & Applications*, in press.
+Please cite the following publication if you use this repository in your research: Franzolini, B. and Rebaudo, G. (2023+). [Entropy regularization in probabilistic clustering](). *Statistical Methods & Applications*, in press.
 
 
 
