@@ -5,7 +5,7 @@ R codes for entropy regularized point estimates of clustering under random parti
 **Authors**: [Beatrice Franzolini](https://beatricefranzolini.github.io) and [Giovanni Rebaudo](https://giovannirebaudo.github.io)
 
 #### Overview 
-This repository is associated with the article [Fanzolini and Rebaudo (2023+) **Entropy regularization in probabilistic clustering.**]()
+This repository is associated with the article: [Franzolini, B. and Rebaudo, G. (2024). **Entropy regularization in probabilistic clustering.** *Statistical Methods & Applications*, **33**, 37-60.](https://link.springer.com/article/10.1007/s10260-023-00716-y) 
 The key contribution of the paper is outlined below.
  
 > [...] we propose a novel Bayesian estimator of the clustering configuration.
@@ -29,7 +29,7 @@ The repository contains the following:
 For bug reporting purposes, e-mail [Beatrice Franzolini](https://beatricefranzolini.github.io) (franzolini@pm.me).
 
 #### Citation
-Please cite the following publication if you use this repository in your research: Franzolini, B. and Rebaudo, G. (2023+). [Entropy regularization in probabilistic clustering](). *Statistical Methods & Applications*, in press.
+Please cite the following publication if you use this repository in your research: [Franzolini, B. and Rebaudo, G. (2024). **Entropy regularization in probabilistic clustering.** *Statistical Methods & Applications*, **33**, 37-60.](https://link.springer.com/article/10.1007/s10260-023-00716-y) 
 
 
 
